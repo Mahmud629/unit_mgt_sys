@@ -1,0 +1,8 @@
+{
+  "name": "ums-schema-tests",
+  "private": true,
+  "type": "module",
+  "description": "Runs supabase/schema.sql in an in-memory PostgreSQL (PGlite) and checks permissions and workflows.",
+  "scripts": { "test": "node rls-test.mjs ../schema.sql" },
+  "dependencies": { "@electric-sql/pglite": "^0.3.0" }
+}

@@ -1,0 +1,31 @@
+{
+  "name": "5sigbn-unit-management-system",
+  "version": "3.6.1",
+  "private": true,
+  "scripts": {
+    "predev": "node scripts/ensure-deps.mjs",
+    "dev": "next dev",
+    "prebuild": "node scripts/ensure-deps.mjs",
+    "build": "next build",
+    "start": "node scripts/serve-lan.mjs",
+    "typecheck": "tsc --noEmit",
+    "serve": "node scripts/serve-lan.mjs",
+    "lan": "npm run build && node scripts/serve-lan.mjs"
+  },
+  "dependencies": {
+    "@supabase/supabase-js": "^2.57.0",
+    "jspdf": "4.2.1",
+    "jspdf-autotable": "5.0.9",
+    "lucide-react": "^0.468.0",
+    "next": "^15.5.0",
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0",
+    "xlsx": "^0.18.5"
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "@types/react": "^19.0.0",
+    "@types/react-dom": "^19.0.0",
+    "typescript": "^5.8.0"
+  }
+}
